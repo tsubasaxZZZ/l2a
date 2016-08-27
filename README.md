@@ -1,4 +1,4 @@
-# l2a
+# アプリ名
 Language Learning Assist
 
 # 基本仕様
@@ -32,5 +32,5 @@ MongoDB
 # 言語
 Python
 
-# アプリケーションサーバー
+# アプリケーション環境
 AppServer: nginx+uWSGI+Python3 and jenkins
