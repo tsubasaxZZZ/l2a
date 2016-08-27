@@ -3,7 +3,7 @@ Language Learning Assist
 
 # 基本仕様
 
-## 翻訳
+## 翻訳部分
 
 * Input
    * 単語もしくは文章
@@ -17,7 +17,7 @@ Language Learning Assist
    * 投げる時と同時にその単語とリクエスト日付とユーザーをDBに格納する
    * 翻訳APIから返ってきた結果をレスポンスする
 
-## 統計情報表示
+## 統計情報表示部分
 
 * Input
    * 開始日付
