@@ -5,6 +5,9 @@ machine:
 dependencies:
   pre:
     - pip install -r ./requirements.txt
+    - python ./index.py
+      background: true
+    - sleep 5
 
 test:
   override:
@@ -12,4 +15,5 @@ test:
     - ifconfig
     - echo HelloWorld
     - python --version
+    - curl http://127.0.0.1/hello
     - exit 0
