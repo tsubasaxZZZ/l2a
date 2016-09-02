@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/tsubasaxZZZ/l2a.svg?style=svg)](https://circleci.com/gh/tsubasaxZZZ/l2a)
+
 # アプリ名
 Language Learning Assist
 
