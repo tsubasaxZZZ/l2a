@@ -12,7 +12,6 @@ test:
   override:
     - pwd ~
     - ifconfig
-    - echo HelloWorld
     - python --version
     - curl http://127.0.0.1:2000/hello
     - exit 0
