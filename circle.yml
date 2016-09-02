@@ -11,4 +11,5 @@ test:
     - pwd ~
     - ifconfig
     - echo HelloWorld
+    - python --version
     - exit 0
