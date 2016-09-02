@@ -5,8 +5,9 @@ machine:
 dependencies:
   pre:
     - pip install -r ./requirements.txt
-    - python ./index.py
-    - sleep 5
+    - python ./index.py:
+             background: true
+    - sleep 10
 test:
   override:
     - pwd ~
