@@ -6,8 +6,6 @@ dependencies:
   pre:
     - pip install -r ./requirements.txt
     - python ./index.py
-          background: true
-    - sleep 5
 
 test:
   override:
