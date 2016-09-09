@@ -9,6 +9,23 @@ from nose.tools import *
 class TestTranslate:
     def test_translatebing_en2ja(self):
         bing = TranslateBing()
+
         t = bing.translate("Hello")
         print(t)
         assert(t == "こんにちは")
+
+        t = bing.translate("こんにちは")
+        print(t)
+        assert(t == "Hello")
+
+        t = bing.translate("こんにちは", "en")
+        print(t)
+        assert(t == "Hello")
+
+        t = bing.translate("Hello", "ja")
+        print(t)
+        assert(t == "こんにちは")
+
+
+        
+        
