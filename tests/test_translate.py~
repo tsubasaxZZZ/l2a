@@ -1,0 +1,17 @@
+# coding: utf-8
+
+#from translates import translate
+#from translates import *
+from translates.translate import Translate
+from nose.tools import *
+
+class TestTranslate:
+    def test_translate_from_en2ja(self):
+        """ Test English to Japanese  """
+        t = Translate()
+
+        RESULT = ("英語", "one", None)
+        
+        for i, str_en in enumerate(["english", "1", "あ" ]):
+            str_ja = t.en2ja(str_en)
+            ok_(str_ja == RESULT[i])

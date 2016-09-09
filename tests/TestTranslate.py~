@@ -1,0 +1,7 @@
+import translate
+
+class TestTranslate:
+    def test_add(self):
+        t = Translate().add()
+        assert  t == None
+
