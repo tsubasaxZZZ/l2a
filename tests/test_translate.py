@@ -4,12 +4,12 @@
 #from translates import *
 from translates.translate import Translate
 from translates.translatebing import TranslateBing
-from nose.tools import *
+import unittest
 
 from logging import getLogger,StreamHandler,DEBUG,Formatter
 
-class TestTranslate:
-    def setup(self):
+class TestTranslate(unittest.TestCase):
+    def setUp(self):
         formatter = Formatter('%(asctime)s - %(name)s.%(funcName)s():%(lineno)s - %(levelname)s - %(message)s')
 
         handler = StreamHandler()
@@ -39,6 +39,6 @@ class TestTranslate:
         print(t)
         assert(t == "こんにちは")
 
-
-        
-        
+if __name__ == '__main__':
+    # unittestを実行
+    unittest.main()
